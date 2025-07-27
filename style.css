@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   background-color: #fff8f0;
@@ -7,4 +8,17 @@ body {
 
 h1 {
   color: #b94e4e;
+}
+
+button {
+  background-color: #b94e4e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a63e3e;
 }
