@@ -1,3 +1,0 @@
-// Booking form submission handling
-const bookingForm = document.getElementById("booking-form");
-...
