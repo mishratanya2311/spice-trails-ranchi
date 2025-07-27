@@ -1,3 +1,4 @@
-// Booking form submission handling
-const bookingForm = document.getElementById("booking-form");
-...
+
+function greet() {
+  alert("Hello from Spice Trails Ranchi!");
+}
