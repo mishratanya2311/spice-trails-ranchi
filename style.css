@@ -1,5 +1,10 @@
-/* Global Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  ...
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #b94e4e;
 }
