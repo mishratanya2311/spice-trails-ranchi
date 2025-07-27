@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Spice Trails Ranchi</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Spice Trails Ranchi</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#booking">Reserve</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Homepage Hero -->
+        <section id="home">
+            <div id="home-hero" role="banner">
+                <h2>Authentic Flavors of Ranchi</h2>
+                <p>Experience the rich spices and traditional Indian cuisine from Jharkhand.</p>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+
+            <article class="menu-category">
+                <h3>Vegetarian</h3>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Paneer Butter Masala</h4>
+                        <p>Creamy tomato gravy with soft paneer cubes.</p>
+                    </div>
+                    <div class="dish-price">₹180</div>
+                </div>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Chole Bhature</h4>
+                        <p>Spicy chickpeas curry served with fried bread.</p>
+                    </div>
+                    <div class="dish-price">₹150</div>
+                </div>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Vegetable Biryani</h4>
+                        <p>Fragrant basmati rice cooked with seasonal veggies and spices.</p>
+                    </div>
+                    <div class="dish-price">₹160</div>
+                </div>
+            </article>
+
+            <article class="menu-category">
+                <h3>Non-Vegetarian</h3>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Butter Chicken</h4>
+                        <p>Tender chicken cooked in creamy tomato sauce.</p>
+                    </div>
+                    <div class="dish-price">₹250</div>
+                </div>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Rogan Josh</h4>
+                        <p>Spicy lamb curry with rich aromatic flavors.</p>
+                    </div>
+                    <div class="dish-price">₹280</div>
+                </div>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Tandoori Chicken</h4>
+                        <p>Marinated chicken grilled in traditional clay oven.</p>
+                    </div>
+                    <div class="dish-price">₹230</div>
+                </div>
+            </article>
+
+            <article class="menu-category">
+                <h3>Chinese</h3>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Veg Hakka Noodles</h4>
+                        <p>Stir-fried noodles with assorted vegetables and sauces.</p>
+                    </div>
+                    <div class="dish-price">₹140</div>
+                </div>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Chicken Manchurian</h4>
+                        <p>Spicy chicken balls in tangy Manchurian sauce.</p>
+                    </div>
+                    <div class="dish-price">₹210</div>
+                </div>
+            </article>
+
+            <article class="menu-category">
+                <h3>Beverages</h3>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Mango Lassi</h4>
+                        <p>Refreshing yogurt-based mango drink.</p>
+                    </div>
+                    <div class="dish-price">₹80</div>
+                </div>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Masala Chai</h4>
+                        <p>Traditional spiced Indian tea.</p>
+                    </div>
+                    <div class="dish-price">₹40</div>
+                </div>
+            </article>
+
+            <article class="menu-category">
+                <h3>Desserts</h3>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Gulab Jamun</h4>
+                        <p>Soft milk dumplings soaked in rose-flavored syrup.</p>
+                    </div>
+                    <div class="dish-price">₹90</div>
+                </div>
+                <div class="dish">
+                    <div class="dish-info">
+                        <h4>Kheer</h4>
+                        <p>Rice pudding flavored with cardamom and nuts.</p>
+                    </div>
+                    <div class="dish-price">₹100</div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Booking Form -->
+        <section id="booking">
+            <h2>Reserve Your Table</h2>
+            <form id="booking-form" aria-label="Reservation form">
+                <label for="res-name">Name:</label>
+                <input type="text" id="res-name" name="name" required />
+
+                <label for="res-email">Email:</label>
+                <input type="email" id="res-email" name="email" required />
+
+                <label for="res-phone">Phone Number:</label>
+                <input type="tel" id="res-phone" name="phone" required pattern="[0-9\s\-+\(\)]{7,15}"
+                    placeholder="+91 98765 43210" />
+
+                <label for="res-date">Date:</label>
+                <input type="date" id="res-date" name="date" required />
+
+                <label for="res-time">Time:</label>
+                <select id="res-time" name="time" required>
+                    <option value="">Select a time</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>5:30 PM</option>
+                    <option>7:00 PM</option>
+                    <option>8:30 PM</option>
+                    <option>10:00 PM</option>
+                </select>
+
+                <button type="submit">Book Now</button>
+            </form>
+            <p id="confirmation" role="alert"></p>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section id="gallery" aria-label="Restaurant photo gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://media.istockphoto.com/id/1085155916/photo/malai-or-achari-paneer-in-a-gravy-made-using-red-gravy-and-green-capsicum-served-in-a-bowl.jpg?s=1024x1024&w=is&k=20&c=NiYe0xeu5tuKZFWu-n-R6PatlEhK9LLgRjuX0_j6k7w="
+                    alt="Paneer Dish" />
+                <img src="https://media.istockphoto.com/id/873539518/photo/deep-fried-bread-spicy-chickpeas-curry-and-salad.jpg?s=1024x1024&w=is&k=20&c=09OHCgh8HINbB3Whd8wFaxzg930GEyRQWhizb5P4ET8="
+                    alt="Chole Bhature" />
+                <img src="https://media.istockphoto.com/id/618457124/photo/butter-chicken-served-with-homemade-indian-naan-bread.jpg?s=1024x1024&w=is&k=20&c=ySHlNbyBYO25RmkmelqrEJNm9VW5NS34dikzWzSj2oI="
+                    alt="Butter Chicken" />
+                <img src="https://media.istockphoto.com/id/953514746/photo/tandoori-chicken-whole-with-naan-and-raita.jpg?s=1024x1024&w=is&k=20&c=mz8ccoxZTpt7cCOYMscENFAbT5fZ2UU4MCIOj1NlURg="
+                    alt="Tandoori Chicken" />
+                <img src="https://media.istockphoto.com/id/163064596/photo/gulab-jamun.jpg?s=1024x1024&w=is&k=20&c=BsH3XXDJrdlbp3hm3AQd_X-oSvUdPJCZb-P4gkTxIho="
+                    alt="Gulab Jamun" />
+                <img src="https://media.istockphoto.com/id/1365859011/photo/drink-mango-lassi-in-two-glasses-on-rustic-concrete-table-with-fresh-ripe-cut-manfo-from-above.jpg?s=1024x1024&w=is&k=20&c=IQAS-55ya4GWYpS8PirEFR0KdfPmYXK4hXJrVD-TxWk="
+                    alt="Mango Lassi" />
+            </div>
+            <!-- Lightbox Modal in gallery section -->
+            <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Expanded gallery image">
+                <span class="close" id="lightbox-close" tabindex="0" role="button" aria-label="Close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img" alt="">
+                <button class="lightbox-arrow" id="lightbox-prev" aria-label="Previous image">&#8592;</button>
+                <button class="lightbox-arrow" id="lightbox-next" aria-label="Next image">&#8594;</button>
+            </div>
+
+        </section>
+
+        <!-- Reviews/Testimonials -->
+<section id="reviews" aria-label="Customer reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews-marquee" aria-live="polite" aria-atomic="true">
+        <div class="reviews-wrapper">
+            <div class="review">
+                <p>"The butter chicken has authentic flavors and melts in my mouth!"</p>
+                <strong>- Rajesh P.</strong>
+            </div>
+            <div class="review">
+                <p>"Excellent ambiance and warm hospitality. Loved the Gulab Jamun."</p>
+                <strong>- Sunita K.</strong>
+            </div>
+            <div class="review">
+                <p>"Chole Bhature here remind me of home. Highly recommend!"</p>
+                <strong>- Aarav S.</strong>
+            </div>
+            <div class="review">
+                <p>"Fresh ingredients and delicious Paneer dishes. Will visit again."</p>
+                <strong>- Nisha M.</strong>
+            </div>
+            <div class="review">
+                <p>"Great place for family dinners. Loved the Mango Lassi."</p>
+                <strong>- Sameer J.</strong>
+            </div>
+            <div class="review">
+                <p>"Service is prompt and staff is very friendly. Highly satisfied."</p>
+                <strong>- Priya T.</strong>
+            </div>
+            <div class="review">
+                <p>"A wonderful experience showcasing the best of Jharkhand's cuisine."</p>
+                <strong>- Deepak R.</strong>
+            </div>
+
+            <!-- Again for the loop -->
+            <div class="review">
+                <p>"The butter chicken has authentic flavors and melts in my mouth!"</p>
+                <strong>- Rajesh P.</strong>
+            </div>
+            <div class="review">
+                <p>"Excellent ambiance and warm hospitality. Loved the Gulab Jamun."</p>
+                <strong>- Sunita K.</strong>
+            </div>
+            <div class="review">
+                <p>"Chole Bhature here remind me of home. Highly recommend!"</p>
+                <strong>- Aarav S.</strong>
+            </div>
+            <div class="review">
+                <p>"Fresh ingredients and delicious Paneer dishes. Will visit again."</p>
+                <strong>- Nisha M.</strong>
+            </div>
+            <div class="review">
+                <p>"Great place for family dinners. Loved the Mango Lassi."</p>
+                <strong>- Sameer J.</strong>
+            </div>
+            <div class="review">
+                <p>"Service is prompt and staff is very friendly. Highly satisfied."</p>
+                <strong>- Priya T.</strong>
+            </div>
+            <div class="review">
+                <p>"A wonderful experience showcasing the best of Jharkhand's cuisine."</p>
+                <strong>- Deepak R.</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact & Location</h2>
+            <div id="contact-info">
+                <p><strong>Address:</strong> 45 MG Road, Ranchi, Jharkhand, India</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Open Hours:</strong> Mon - Sun: 10:00 AM - 10:00 PM</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Note: This is a front-end only website</p>
+        <p>&copy; 2025 Spice Trails Ranchi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+  </html>
